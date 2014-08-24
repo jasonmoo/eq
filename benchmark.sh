@@ -1,0 +1,1 @@
+go test -v -benchmem -bench . | tee benchmark.txt

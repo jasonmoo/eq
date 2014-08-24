@@ -1,0 +1,9 @@
+=== RUN: ExampleQueue
+--- PASS: ExampleQueue (130.483us)
+=== RUN: ExampleConcurrentQueue
+--- PASS: ExampleConcurrentQueue (410.398us)
+PASS
+BenchmarkEnqueues	 5000000	       563 ns/op	     337 B/op	       2 allocs/op
+BenchmarkDequeues	 5000000	       403 ns/op	     288 B/op	       1 allocs/op
+BenchmarkEnqueueDequeue	 2000000	       982 ns/op	     480 B/op	       2 allocs/op
+ok  	github.com/jasonmoo/eq	33.742s
