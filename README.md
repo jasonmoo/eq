@@ -3,6 +3,8 @@ elastic, *threadsafe* queue
 
 A simple queue that expands via container/list and uses channels for `Enqueue` and `Dequeue` actions.
 
+Allows enqeue/dequeue via channels that will never block.
+
 ###Example:
 
 	// channels are buffered to provided size
@@ -57,3 +59,5 @@ over the `Dequeue` channel will drain it.
 	// 5
 	// 6
 
+[DOCS](http://godoc.org/github.com/jasonmoo/eq)
+[LICENSE](https://raw.github.com/jasonmoo/eq/master/LICENSE)
